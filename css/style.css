@@ -1,11 +1,12 @@
+body {
+  background-color: #282828;
+  text-align: center;
+}
+
+
 h1 {
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: #ebdbb2;
   font-size: 150;
-}
-
-body {
-  background-color: #282828;
-  text-align: center;
 }
