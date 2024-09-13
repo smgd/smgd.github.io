@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>soapmangoesdown</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="DUIQy2JuAUrCcs_kDzr6gwc7rRXNIdYUjHNDqB0HHII" />
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>smgd</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @-webkit-keyframes bg-slide {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
 
-  <body>
-    <h1>Stas is cool!</h1>
-    
-    <p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/St7S3YrxqW0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </p>
-    
-    <p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/FgUSmmTEE3M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </p>
-    
-    <script src="js/index.js"></script>
-  </body>
+    .bg {
+        width: 200%;
+        background: url('assets/img/namek.png') center center repeat;
+        background-size: 200px;
+        animation: bg-slide 60s linear infinite;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+  </style>
+</head>
+<body class="relative overflow-hidden w-full h-screen">
+  <div class="bg h-screen"></div>
+  <div class="w-full h-screen flex flex-col justify-center items-center absolute">
+    <div class="bg-white w-72 h-48 p-4 flex flex-col justify-center items-center">
+      <div class="text-6xl">
+        smgd
+      </div>
+    </div>
+  </div>
+</body>
 </html>
